@@ -1,0 +1,39 @@
+/* Ensure full-screen background */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Video Styling */
+#bgVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%) scale(1.05); /* Center and zoom */
+    z-index: -1;
+    transition: filter 0.5s ease-out;
+}
+
+
+/* Apply blur when video ends */
+.blurred {
+    filter: blur(10px) brightness(0.5);
+    border-radius: 0;
+}
+
+/* Content Styling */
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+}
