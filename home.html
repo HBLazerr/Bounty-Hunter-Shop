@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
     <!-- Video Background -->
     <video id="bgVideo" autoplay muted playsinline>
         <source src="media/underground-bg.mp4" type="video/mp4">
@@ -21,20 +31,20 @@
 
     <script>
         const video = document.getElementById("bgVideo");
-
+    
         video.addEventListener("timeupdate", function() {
             const remainingTime = video.duration - video.currentTime;
-
-            // Start blurring when 2 seconds are left
+    
+            // Start blurring and darkening when 2 seconds are left
             if (remainingTime < 2) {
-                let blurAmount = (2 - remainingTime) * 5; // Max blur: 10px
-                video.style.filter = `blur(${blurAmount}px) brightness(0.5)`;
+                let effectAmount = (2 - remainingTime) * 5; // Max effect: 10px blur and 0.5 brightness
+                video.style.filter = `blur(${effectAmount}px) brightness(${1 - effectAmount / 20})`;
             }
         });
-
+    
         video.addEventListener("ended", function() {
             video.pause(); // Pause at last frame
-            video.currentTime = video.duration; // Ensure it stays on last frame
+            video.currentTime = video.duration - .05; // Ensure it stays on last frame
         });
     </script>
 </body>
