@@ -11,19 +11,23 @@
   </head>
   <body>
     <!-- Video Background -->
-    <video id="bgVideo" autoplay muted playsinline>
-      <source src="underground-bg.mp4" type="video/mp4" />
+    <video id="bgVideo" autoplay muted loop>
+      <source src="cyberpunk-hero.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
     <!-- Content -->
     <div class="content">
-      <h1>HUSH TRADING</h1>
+      <h1>WELCOME TO</h1>
+      <div class="glitchText">
+        <div title="CRYPTIC TRANSACTIONS" id="glitch">CRYPTIC TRANSACTIONS</div>
+      </div>
+
       <p>Explore futuristic technology and gear.</p>
 
       <!-- From Uiverse.io by Galahhad -->
       <a href="../Shop/shop.html">
-        <button class="ui-btn">
+        <button id="universal-effect">
           <span> Enter Market </span>
         </button>
       </a>
@@ -31,22 +35,18 @@
 
     <script>
       const video = document.getElementById("bgVideo");
+      const content = document.querySelector('.content');
 
-      video.addEventListener("timeupdate", function () {
-        const remainingTime = video.duration - video.currentTime;
+      // Add blur effect after a few seconds
+      setTimeout(() => {
+        video.classList.add("blurred");
+      }, 300); // 1.5 seconds delay
 
-        // Start blurring and darkening when 2 seconds are left
-        if (remainingTime < 2) {
-          let effectAmount = (2 - remainingTime) * 5; // Max effect: 10px blur and 0.5 brightness
-          video.style.filter = `blur(${effectAmount}px) brightness(${
-            1 - effectAmount / 20
-          })`;
-        }
-      });
-
-      video.addEventListener("ended", function () {
-        video.pause(); // Pause at last frame
-        video.currentTime = video.duration - 0.05; // Ensure it stays on last frame
+      // Fade in content after a few seconds
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          content.classList.add('fade-in');
+        }, 500); // 1/2 second delay
       });
     </script>
   </body>

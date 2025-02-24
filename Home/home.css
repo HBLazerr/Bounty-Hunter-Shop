@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /* Ensure full-screen background */
 html, body {
     margin: 0;
@@ -16,7 +19,7 @@ html, body {
     object-fit: cover;
     transform: translate(-50%, -50%) scale(1.05); /* Center and zoom */
     z-index: -1;
-    transition: filter 0.5s ease-out;
+    transition: filter .6s ease-out; /* Smooth transition for blur effect */
 }
 
 a {
@@ -40,14 +43,99 @@ a {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity .8s ease-in; /* Smooth fade-in effect */
 }
 
-/* Center the button */
-.ui-btn {
-    --btn-default-bg: rgb(41, 41, 41);
+.content.fade-in {
+    opacity: 1; /* Fade in */
+}
+
+.content p {
+    margin-bottom: 72px;
+}
+
+.glitchText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #fff;
+    font-size: 96px;
+    letter-spacing: -7px;
+}
+
+#glitch {
+    animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+    2%, 64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%, 60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+#glitch:before,
+#glitch:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+
+#glitch:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+    2%, 64% {
+        transform: translate(2px, -2px);
+    }
+
+    4%, 60% {
+        transform: translate(-2px, 2px);
+    }
+
+    62% {
+        transform: translate(13px, -1px) skew(-13deg);
+    }
+}
+
+#glitch:after {
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+    2%, 64% {
+        transform: translate(-2px, 0);
+    }
+
+    4%, 60% {
+        transform: translate(-2px, 0);
+    }
+
+    62% {
+        transform: translate(-22px, 5px) skew(21deg);
+    }
+}
+
+/* Universal Effect Styling */
+#universal-effect {
+    --btn-default-bg: rgb(18, 18, 18);
     --btn-padding: 15px 20px;
-    --btn-hover-bg: rgb(51, 51, 51);
-    --btn-transition: .3s;
+    --btn-hover-bg: rgb(15, 15, 15);
+    --btn-transition: .6s;
     --btn-letter-spacing: .1rem;
     --btn-animation-duration: 1.2s;
     --btn-shadow-color: rgba(0, 0, 0, 0.137);
@@ -59,7 +147,7 @@ a {
     --font-family: Menlo, Roboto Mono, monospace;
     box-sizing: border-box;
     padding: var(--btn-padding);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     color: var(--default-btn-color);
@@ -74,7 +162,7 @@ a {
     margin: 20px auto; /* Center the button horizontally */
 }
 
-.ui-btn span {
+#universal-effect span {
     letter-spacing: var(--btn-letter-spacing);
     transition: var(--btn-transition);
     box-sizing: border-box;
@@ -82,22 +170,22 @@ a {
     background: inherit;
 }
 
-.ui-btn span::before {
+#universal-effect span::before {
     box-sizing: border-box;
     position: absolute;
     content: "";
     background: inherit;
 }
 
-.ui-btn:hover, .ui-btn:focus {
+#universal-effect:hover, #universal-effect:focus {
     background: var(--btn-hover-bg);
 }
 
-.ui-btn:hover span, .ui-btn:focus span {
+#universal-effect:hover span, #universal-effect:focus span {
     color: var(--hover-btn-color);
 }
 
-.ui-btn:hover span::before, .ui-btn:focus span::before {
+#universal-effect:hover span::before, #universal-effect:focus span::before {
     animation: chitchat linear both var(--btn-animation-duration);
 }
 
