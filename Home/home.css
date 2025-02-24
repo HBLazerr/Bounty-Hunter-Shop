@@ -63,6 +63,7 @@ a {
     color: #fff;
     font-size: 96px;
     letter-spacing: -7px;
+    user-select: none;
 }
 
 #glitch {
