@@ -1,9 +1,0 @@
-{
-    "routes": [
-      { "src": "/", "dest": "/Home/home.html" }
-    ],
-    "static": {
-      "public": "Home"
-    }
-  }
-  
