@@ -2,7 +2,7 @@
   {
     "name": "PipBoy",
     "price": "1,000",
-    "image": "products/pipboy0.png",
+    "image": "products/pipboy.png",
     "description": "A rugged wrist-mounted computer that keeps you connected to your environment. Featuring a real-time mapping system, radiation scanner, and encrypted comms, the PipBoy ensures you never lose your way—no matter how hostile the terrain.",
     "review": 4.2,
     "topReview": "Navigated through a radstorm with ease. Essential for any mission."
