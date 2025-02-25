@@ -3,254 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
-    <link rel="stylesheet" href="shop.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <link rel="stylesheet" href="shop.css" />
+
     <title>Products | Cryptic Transactions</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <h1>CRYPTIC TRANSACTIONS</h1>
+        <a href="../Public/index.html">
+          <img src="CT-icon.png" class="logo__img" alt="Cryptic Transactions" />
+        </a>
       </div>
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
+        <ul class="nav-menu">
+          <li><a href="../Public/index.html">Home</a></li>
           <li><a href="#">Shop</a></li>
-          <li><a href="#">Categories</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="">Contracts</a></li>
         </ul>
+        <div class="profile">
+          <a href="../Profile/profile.html">
+            <i class="ri-robot-3-line profile__icon"></i>
+          </a>
+        </div>
       </nav>
     </header>
 
-    <section class="container">
-      <h2 class="container__title">Select Your Product</h2>
-      <hr color>
-      <br>
-      <h2 class="container__title2">Browse on our catalog of items and gadgets</h2>
-
-      <div class="card__container">
-        <article>
-          <!-- CARD PRODUCT -->
-          <div class="card__product">
-            <img src="products/needler.jpg" alt="image" class="card__img">
-            <div>
-              <h3 class="card__name">Needler</h3>
-              <span class="card__price">5,000₿</span>
-            </div>
-          </div>
-
-          <!-- POPUP MODAL -->
-          <div class="modal">
-            <div class="modal__card">
-              <i class="ri-close-large-line modal__close"></i>
-              <img src="products/needler.jpg" alt="image" class="modal__img">
-              <div>
-                <h3 class="modal__name">Needler</h3>
-                <p class="modal__info">
-                  Computer product in the best brand 
-                  and of good quality at a good price.
-                </p>
-                <span class="modal__price">5,000₿</span>
-              </div>
-              <div class="modal__buttons">
-                <button class="modal__button modal__button-ghost">Buy Now</button>
-                <button class="modal__button">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <!-- CARD PRODUCT -->
-          <div class="card__product">
-            <img src="products/fin.jpg" alt="image" class="card__img">
-            <div>
-              <h3 class="card__name">Fin</h3>
-              <span class="card__price">3,000₿</span>
-            </div>
-          </div>
-
-          <!-- POPUP MODAL -->
-          <div class="modal">
-            <div class="modal__card">
-              <i class="ri-close-large-line modal__close"></i>
-              <img src="products/fin.jpg" alt="image" class="modal__img">
-              <div>
-                <h3 class="modal__name">Fin</h3>
-                <p class="modal__info">
-                  Computer product in the best brand 
-                  and of good quality at a good price.
-                </p>
-                <span class="modal__price">3,000₿</span>
-              </div>
-              <div class="modal__buttons">
-                <button class="modal__button modal__button-ghost">Buy Now</button>
-                <button class="modal__button">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <!-- CARD PRODUCT -->
-          <div class="card__product">
-            <img src="products/ship.jpg" alt="image" class="card__img">
-            <div>
-              <h3 class="card__name">Tie Fighter</h3>
-              <span class="card__price">20,000₿</span>
-            </div>
-          </div>
-
-          <!-- POPUP MODAL -->
-          <div class="modal">
-            <div class="modal__card">
-              <i class="ri-close-large-line modal__close"></i>
-              <img src="products/ship.jpg" alt="image" class="modal__img">
-              <div>
-                <h3 class="modal__name">Tie Fighter</h3>
-                <p class="modal__info">
-                  Computer product in the best brand 
-                  and of good quality at a good price.
-                </p>
-                <span class="modal__price">20,000₿</span>
-              </div>
-              <div class="modal__buttons">
-                <button class="modal__button modal__button-ghost">Buy Now</button>
-                <button class="modal__button">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <!-- CARD PRODUCT -->
-          <div class="card__product">
-            <img src="products/helmet.jpg" alt="image" class="card__img">
-            <div>
-              <h3 class="card__name">Halo Helmet</h3>
-              <span class="card__price">5,000₿</span>
-            </div>
-          </div>
-
-          <!-- POPUP MODAL -->
-          <div class="modal">
-            <div class="modal__card">
-              <i class="ri-close-large-line modal__close"></i>
-              <img src="products/helmet.jpg" alt="image" class="modal__img">
-              <div>
-                <h3 class="modal__name">Halo Helmet</h3>
-                <p class="modal__info">
-                  Computer product in the best brand 
-                  and of good quality at a good price.
-                </p>
-                <span class="modal__price">5,000₿</span>
-              </div>
-              <div class="modal__buttons">
-                <button class="modal__button modal__button-ghost">Buy Now</button>
-                <button class="modal__button">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <!-- CARD PRODUCT -->
-          <div class="card__product">
-            <img src="products/pipboy.jpg" alt="image" class="card__img">
-            <div>
-              <h3 class="card__name">PipBoy</h3>
-              <span class="card__price">1,000₿</span>
-            </div>
-          </div>
-
-          <!-- POPUP MODAL -->
-          <div class="modal">
-            <div class="modal__card">
-              <i class="ri-close-large-line modal__close"></i>
-              <img src="products/pipboy.jpg" alt="image" class="modal__img">
-              <div>
-                <h3 class="modal__name">PipBoy</h3>
-                <p class="modal__info">
-                  Computer product in the best brand 
-                  and of good quality at a good price.
-                </p>
-                <span class="modal__price">1,000₿</span>
-              </div>
-              <div class="modal__buttons">
-                <button class="modal__button modal__button-ghost">Buy Now</button>
-                <button class="modal__button">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <!-- CARD PRODUCT -->
-          <div class="card__product">
-            <img src="" alt="image" class="card__img">
-            <div>
-              <h3 class="card__name"></h3>
-              <span class="card__price">$5,000</span>
-            </div>
-          </div>
-
-          <!-- POPUP MODAL -->
-          <div class="modal">
-            <div class="modal__card">
-              <i class="ri-close-large-line modal__close"></i>
-              <img src="" alt="image" class="modal__img">
-              <div>
-                <h3 class="modal__name"></h3>
-                <p class="modal__info">
-                  Computer product in the best brand 
-                  and of good quality at a good price.
-                </p>
-                <span class="modal__price">$5,000</span>
-              </div>
-              <div class="modal__buttons">
-                <button class="modal__button modal__button-ghost">Buy Now</button>
-                <button class="modal__button">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <!-- CARD PRODUCT -->
-          <div class="card__product">
-            <img src="" alt="image" class="card__img">
-            <div>
-              <h3 class="card__name"></h3>
-              <span class="card__price">$5,000</span>
-            </div>
-          </div>
-
-          <!-- POPUP MODAL -->
-          <div class="modal">
-            <div class="modal__card">
-              <i class="ri-close-large-line modal__close"></i>
-              <img src="" alt="image" class="modal__img">
-              <div>
-                <h3 class="modal__name"></h3>
-                <p class="modal__info">
-                  Computer product in the best brand 
-                  and of good quality at a good price.
-                </p>
-                <span class="modal__price">$5,000</span>
-              </div>
-              <div class="modal__buttons">
-                <button class="modal__button modal__button-ghost">Buy Now</button>
-                <button class="modal__button">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-        </article>
+    <section class="intro">
+      <div class="intro__content">
+        <p>
+          Welcome to the marketplace of the unseen. If you made it this far, you
+          either know what you’re looking for or you’re about to find something
+          deadly useful. Every piece of tech here is off-the-grid, untraceable,
+          and illegal in most systems. No refunds. No tracking numbers. No
+          mistakes. Choose wisely.
+        </p>
+        <p class="intro__note" id="glitch" title="💀 NEW TO THE MARKET? DON'T ASK QUESTIONS. JUST PAY AND DISAPPEAR. 💀">
+          💀 NEW TO THE MARKET? DON'T ASK QUESTIONS. JUST PAY AND DISAPPEAR. 💀
+        </p>
       </div>
     </section>
 
+    <section class="container">
+      <h2 class="container__title">Browse the Arsenal</h2>
+      <hr color />
+      <br />
+      <h2 class="container__title2">Weapons, Gadgets, Suits, Vehicles, and Tools for Every Mission.</h2>
+
+      <div class="card__container" id="product-container"></div>
+    </section>
+
     <!-- Footer -->
+
     <footer>
-      <p>&copy; 2025 Cryptic Transactions. All Rights Reserved.</p>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Secure Anonymity</h3>
+          <p>
+            Transactions encrypted. All drop off locations untraceable. No
+            background checks. No face scans. No Voight-Kampff tests. No
+            questions asked.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Disclaimer</h3>
+          <p>
+            Cryptic Transactions is not responsible for any misuse of acquired
+            assets. No refunds. All sales are final.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Need Assistance?</h3>
+          <p>
+            We'll see what we can do I guess: <br /><a
+              href="https://youtu.be/xvFZjo5PgG0?si=LBMnNEU2poT6zClL"
+              target="_blank"
+              >CTNet Support Line</a
+            >
+          </p>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; 2098 Cryptic Transactions. Blacklisted by 37 factions. Still
+        standing.
+      </p>
     </footer>
 
     <!--=============== SHOP JS ===============-->

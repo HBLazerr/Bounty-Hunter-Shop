@@ -1,0 +1,50 @@
+[
+  {
+    "name": "PipBoy",
+    "price": "1,000",
+    "image": "products/pipboy.jpg",
+    "description": "A rugged wrist-mounted computer that keeps you connected to your environment. Featuring a real-time mapping system, radiation scanner, and encrypted comms, the PipBoy ensures you never lose your way—no matter how hostile the terrain.",
+    "review": 4.2,
+    "topReview": "Navigated through a radstorm with ease. Essential for any mission."
+  },
+  {
+    "name": "Needler",
+    "price": "5,000",
+    "image": "products/needler.jpg",
+    "description": "A compact yet deadly sidearm that fires homing plasma-tipped needles capable of piercing advanced armor. Its auto-targeting system and explosive payload make it a favorite for bounty hunters who prefer precision and power in one package.",
+    "review": 4.6,
+    "topReview": "This thing burned right through that bounty's armor. Worth every coin."
+  },
+  {
+    "name": "Fin",
+    "price": "3,000",
+    "image": "products/fin.jpg",
+    "description": "A sleek, high-speed hoverboard built for urban chases and off-world escapes. Its anti-grav boosters provide smooth gliding over any terrain, while its cloaking tech allows for temporary stealth mode in high-stakes pursuits.",
+    "review": 3.9,
+    "topReview": "Outran a squadron of Imperial speeder bikes. Perfect for quick getaways!"
+  },
+  {
+    "name": "Tie Fighter",
+    "price": "20,000",
+    "image": "products/ship.jpg",
+    "description": "A nimble, high-speed starfighter equipped with twin laser cannons and reinforced hull plating. Built for rapid strikes and deep-space dogfights, this ex-military vessel has been modified for independent bounty hunters looking to make a statement.",
+    "review": 4.3,
+    "topReview": "Took down a rebel transport in seconds. The firepower is unmatched."
+  },
+  {
+    "name": "Halo Helmet",
+    "price": "5,000",
+    "image": "products/helmet.jpg",
+    "description": "An advanced combat helmet featuring an AI-assisted HUD, multi-spectrum vision modes, and a reinforced titanium shell. Designed for bounty hunters operating in extreme conditions, it enhances reflexes and provides crucial battlefield intel in real-time.",
+    "review": 4.9,
+    "topReview": "Saved my life in a firefight. The visor tech is next-level."
+  },
+  {
+    "name": "StealthLink Deck",
+    "price": "5,000",
+    "image": "products/stealthlink.jpg",
+    "description": "A state-of-the-art cyberdeck built for digital infiltration. Equipped with quantum encryption breakers and stealth protocols, the StealthLink Deck allows for silent breaches into secure networks—perfect for bounty hunters who specialize in information warfare.",
+    "review": 4.0,
+    "topReview": "Hacked into a corporate mainframe undetected. Stealth mode is impressive."
+  }
+]
