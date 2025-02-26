@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
                <i class="ri-close-large-line modal__close"></i>
                <img src="${product.image}" alt="${product.name}" class="modal__img" />
                <div>
-                 <h3 class="modal__name">${product.name}</h3>
+                 <h3 class="modal__name">${product.name} 
+                   <i class="ri-information-line modal__info-icon ${product.story ? '' : 'disabled'}" title="More Info"></i>
+                 </h3>
                  <p class="modal__info">${product.description}</p>
                  <div class="modal__review">
                    <h4>Top Review</h4>
@@ -48,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
          const cardBtns = document.querySelectorAll('.card__product');
          const modalCloses = document.querySelectorAll('.modal__close');
          const modalCards = document.querySelectorAll('.modal__card');
+         const infoIcons = document.querySelectorAll('.modal__info-icon');
 
          let activeModal = (modalClick) => {
             modals[modalClick].classList.add('active-modal');
@@ -80,6 +83,20 @@ document.addEventListener('DOMContentLoaded', () => {
          modalCards.forEach((modalCard) => {
             modalCard.addEventListener('click', (e) => {
                e.stopPropagation();
+            });
+         });
+
+         /* Swap description with story on info icon click */
+         infoIcons.forEach((infoIcon, i) => {
+            infoIcon.addEventListener('click', () => {
+               if (!infoIcon.classList.contains('disabled')) {
+                  const modalInfo = modals[i].querySelector('.modal__info');
+                  if (modalInfo.textContent === data[i].description) {
+                     modalInfo.textContent = data[i].story;
+                  } else {
+                     modalInfo.textContent = data[i].description;
+                  }
+               }
             });
          });
       })

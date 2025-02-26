@@ -1,27 +1,39 @@
 [
   {
+    "name": "Katana Saber",
+    "price": "10,000",
+    "image": "products/slice-aber.jpg",
+    "description": "A hybrid energy blade with a monomolecular edge. Cuts through steel like paper, but requires a steady hand—or at least a cybernetic one.",
+    "review": 4.5,
+    "topReview": "Sliced through a corporate security droid like it was warm butter. No regrets.",
+    "story": "Forged in the neon slums of Neo-Tokyo, this blade was once wielded by a rogue cyber-samurai who took down an entire megacorp enforcer squad. Only found after his last stand."
+  },
+  {
+    "name": "SPK Series-D Blaster",
+    "price": "10,000",
+    "image": "products/blade_runner_blaster.png",
+    "description": "A heavy-duty sidearm designed for precision eliminations. Fires custom .44-caliber caseless rounds, perfect for handling rogue assets.",
+    "review": 4.5,
+    "topReview": "Built like a tank, feels like a piece of history. Packs a punch. - NeonDrifter",
+    "story": "Acquired from an off-world detective who went missing after an ‘assignment’ in the rain-soaked neon district. Still had dried blood on the grip."
+  },
+  {
     "name": "PipBoy",
     "price": "1,000",
     "image": "products/pipboy.png",
     "description": "A rugged wrist-mounted computer that keeps you connected to your environment. Featuring a real-time mapping system, radiation scanner, and encrypted comms, the PipBoy ensures you never lose your way—no matter how hostile the terrain.",
     "review": 4.2,
-    "topReview": "Navigated through a radstorm with ease. Essential for any mission."
-  },
+    "topReview": "Navigated through a radstorm with ease. Essential for any mission. - GhostRogue",
+    "story": "Recovered from the ruins of an underground shelter that didn't quite live up to its ‘secure’ reputation. Found alongside some very unlucky vault-dwellers who clearly never made it topside."
+  },  
   {
-    "name": "Needler",
-    "price": "5,000",
-    "image": "products/needler.jpg",
-    "description": "A compact yet deadly sidearm that fires homing plasma-tipped needles capable of piercing advanced armor. Its auto-targeting system and explosive payload make it a favorite for bounty hunters who prefer precision and power in one package.",
-    "review": 4.6,
-    "topReview": "This thing burned right through that bounty's armor. Worth every coin."
-  },
-  {
-    "name": "Fin",
-    "price": "3,000",
-    "image": "products/fin.jpg",
-    "description": "A sleek, high-speed hoverboard built for urban chases and off-world escapes. Its anti-grav boosters provide smooth gliding over any terrain, while its cloaking tech allows for temporary stealth mode in high-stakes pursuits.",
-    "review": 3.9,
-    "topReview": "Outran a squadron of Imperial speeder bikes. Perfect for quick getaways!"
+    "name": "Cyber Bunny",
+    "price": "40,000",
+    "image": "products/cyber-bunny.png",
+    "description": "An autonomous, AI-enhanced pet with high-speed reconnaissance and infiltration capabilities. Cute, but deadly when necessary.",
+    "review": 4.1,
+    "topReview": "Hacked into a senator’s vault in 30 seconds. Also learned how to beg for treats.",
+    "story": "Originally designed as a prototype for the Intergalactic Pet Expo, this model was scrapped when its AI outsmarted the handlers and escaped containment. Tracked to an underground auction."
   },
   {
     "name": "Tie Fighter",
@@ -32,6 +44,41 @@
     "topReview": "Took down a rebel transport in seconds. The firepower is unmatched."
   },
   {
+    "name": "Hvnters MKII Helmet",
+    "price": "8,000",
+    "image": "products/hunters-helmet.png",
+    "description": "Tactical HUD, thermal vision, and encrypted comms. A must-have for any bounty hunter operating in hostile environments.",
+    "review": 4.8,
+    "topReview": "Tracked a mark through a sandstorm with zero visibility. Never taking it off.",
+    "story": "Recovered from the wreckage of a derelict assassin's ship drifting near Titan. Helmet’s last data log suggests its owner didn’t go down without a fight."
+  },
+  {
+    "name": "AI Mercenaries",
+    "price": "30,000",
+    "image": "products/ai-mercenaries.jpeg",
+    "description": "A squad of fully autonomous, combat-ready AI enforcers. Programmable loyalty, relentless execution.",
+    "review": 4.6,
+    "topReview": "Efficient, obedient, and terrifying. My enemies never knew what hit them.",
+    "story": "Originally deployed by a rogue planetary governor, these mercs were decommissioned after an AI uprising. Most were destroyed, but a few units mysteriously vanished—until now."
+  },
+  {
+    "name": "Needler",
+    "price": "5,000",
+    "image": "products/needler.jpg",
+    "description": "A compact yet deadly sidearm that fires homing plasma-tipped needles capable of piercing advanced armor. Its auto-targeting system and explosive payload make it a favorite for bounty hunters who prefer precision and power in one package.",
+    "review": 4.6,
+    "topReview": "This thing burned right through that bounty's armor."
+  },
+  {
+    "name": "Riot Armor",
+    "price": "18,000",
+    "image": "products/childrenofmen_riotoutfit.png",
+    "description": "State-of-the-art impact-resistant plating with a reinforced faceplate. Built to withstand civil uprisings and brutal urban warfare.",
+    "review": 4.4,
+    "topReview": "Took a direct hit from a riot cannon—barely flinched. I'm definitely fighting in this again.",
+    "story": "Recovered from a decommissioned task force stationed in a city that no longer exists. Those who wore it last never made it out."
+  },
+  {
     "name": "Halo Helmet",
     "price": "5,000",
     "image": "products/helmet.jpg",
@@ -40,11 +87,32 @@
     "topReview": "Saved my life in a firefight. The visor tech is next-level."
   },
   {
-    "name": "StealthLink Deck",
-    "price": "5,000",
-    "image": "products/stealthlink.jpg",
-    "description": "A state-of-the-art cyberdeck built for digital infiltration. Equipped with quantum encryption breakers and stealth protocols, the StealthLink Deck allows for silent breaches into secure networks—perfect for bounty hunters who specialize in information warfare.",
-    "review": 4.0,
-    "topReview": "Hacked into a corporate mainframe undetected. Stealth mode is impressive."
+    "name": "Portal Gun",
+    "price": "25,000",
+    "image": "products/portal-gun.png",
+    "description": "Creates temporary rifts between dimensions. Stability not guaranteed, but when it works, it’s the ultimate escape tool.",
+    "review": 4.9,
+    "topReview": "Best investment I ever made. Just don’t ask where my partner ended up.",
+    "story": "Extracted from a lab belonging to a fugitive scientist with questionable sanity. We found the gun, but no sign of him—just an ominous glowing hole in the wall."
+  },
+  {
+    "name": "Batman Grappler",
+    "price": "12,000",
+    "image": "products/batman-grappler.jpg",
+    "description": "High-tensile cable launcher capable of supporting 600lbs. Includes automatic recoil and silent motorized ascent.",
+    "review": 4.7,
+    "topReview": "Silent, reliable, and gets you out of tight spots. Feels like it belonged to a legend.",
+    "story": "Sourced from an abandoned cave in a crime-ridden metropolis. The previous owner left in a hurry—probably didn’t have time to notice it was missing."
+  },
+  {
+    "name": "Raygun",
+    "price": "22,000",
+    "image": "products/raygun.jpg",
+    "description": "Retro-styled plasma weapon with high-energy discharge. Devastating against organic targets. Do not fire close to own feet.",
+    "review": 4.8,
+    "topReview": "Vaporized a squad of bounty hunters in a single burst. It’s got a real vintage charm.",
+    "story": "Salvaged from a weapon box with a '?' on it. The previous wielders didn’t survive—but safe to say their enemies didn’t either."
   }
 ]
+
+
